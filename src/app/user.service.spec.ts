@@ -13,4 +13,9 @@ describe('UserService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should return default user', () => {
+    let result = service.getDefaultUser();
+    expect(result.length).toBe(1);
+  });
 });
